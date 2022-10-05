@@ -12,7 +12,33 @@
 }
 
 body{
-    font-family: 'Outfit', sans-serif;}
+    font-family: 'Outfit', sans-serif;
+}
+
+/* MENÚ DE NAVEGACIÓN SMALL */
+@media only screen and (max-width:1023px){
+    .navar{
+        background-color: var(--negro--); 
+    }
+
+    .content_video{
+        position: relative;
+        left: 20px;
+    }
+
+    .content_video video{
+        width: 90px;
+        position: absolute;
+    }
+
+    .icon_menu{
+        color: var(--blanco--);
+    }
+
+    .icon_menu img{
+        width: 100px;
+    }
+}
 
 /* MENÚ DE NAVEGACIÓN BIG */
 @media(min-width:768px){
@@ -31,11 +57,19 @@ body{
         right: 150px;
     }
 
-    .content_video video{
+    .content_video .black{
         position: absolute;
         width: 80px;
         object-fit: cover;
 
+    }
+
+    .content_video .white{
+        display: none;
+    }
+
+    .icon_menu{
+        display: none;
     }
 
     /* .logo_whatssive{
