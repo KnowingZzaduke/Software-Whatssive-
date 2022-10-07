@@ -7,6 +7,7 @@
     <title>Whatssive</title><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/normalize.css">
     <link rel="stylesheet" href="style.css">
 
@@ -15,26 +16,53 @@
     <header>
         <nav class="navar">
             <div class="navar_1">
-                <div class="content_video">
-                    <video autoplay muted class="black">
-                        <source src="../videos/Whatssive.mp4" type="video/mp4">
-                    </video>
-
-                    <video autoplay muted class="white">
-                        <source src="../videos/Whatssive-white.mp4" type="video/mp4">
-                    </video>
+                <div class="content_nav-min">    
+                    <div class="content_video">
+                        <video autoplay muted class="black">
+                            <source src="../videos/Whatssive.mp4" type="video/mp4">
+                        </video>                     
+                    </div>           
+                    <nav class="navbar navbar-dark bg-black min">
+                        <div class="container-fluid content_navbar">
+                          <a class="navbar-brand" href="#">
+                            <div class="content_video">       
+                                <video autoplay muted class="black-min">
+                                    <source src="../videos/Whatssive.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                          </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas-body content_list" id="navbarNav">
+                            <ul class="navbar-nav" style="color: white;">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Api de whatsapp</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Tutoriales</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link">Quienes somos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link">Iniciar Sesión	</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
-
-                <div class="icon_menu">
-                    <img src="../images/menu.png" alt="menú hamburguesa">
-                </div>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Api de whatsapp</a></li>
-                    <li><a href="#">Tutoriales</a></li>
-                    <li><a href="#">Quienes somos</a></li>
-                    <li><a href="#">Iniciar Sesión</a></li>
-                </ul>
+               <div class="cont-menu" id="menú">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Api de whatsapp</a></li>
+                        <li><a href="#">Tutoriales</a></li>
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="/views/formularios/form_iniciar.html   " target="_blank">Iniciar Sesión</a></li>
+                    </ul>
+                </div> 
+               
             </div>
         </nav>
     </header>
@@ -57,7 +85,7 @@
     <section class="second_section">
         <div class="intro_content">
             <h1>Como funciona?</h1>
-            <p>Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
+            h4Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
         </div>
 
         <div class="info_content">
@@ -192,10 +220,11 @@
             </div>
     
             <div class="copright">
-                <p>Todos los derechos reservados &copy; Whatssive 2022</p>
+                <h6>Todos los derechos reservados &copy; Whatssive 2022</h6>
             </div>
         </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

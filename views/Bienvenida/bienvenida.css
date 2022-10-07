@@ -1,0 +1,30 @@
+:root{
+    --blanco--: #ffff;
+    --negro--: black;
+    --rojo--: #8C104E; 
+    --verde--: #52BE80;
+    --gris--: #EAEDED;
+    --blanco2--: rgb(255, 255, 255);
+    
+}
+*{
+    margin: 0% auto;
+    padding: 0% auto;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--gris--);
+}
+
+@media(min-width:768px){
+    .navbar{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .content_logo video{
+        width: 80px;
+        
+    }
+}
