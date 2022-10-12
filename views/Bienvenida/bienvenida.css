@@ -17,7 +17,6 @@ body{
     background-color: var(--gris--);
 }
 
-@media(min-width:768px){
     .navbar{
         display: flex;
         flex-direction: row-reverse;
@@ -27,4 +26,115 @@ body{
         width: 80px;
         
     }
-}
+
+    .offcanvas-body{
+        width: 100%;
+    }
+
+    .offcanvas-body ul{
+        text-align: center;
+    }
+
+    .offcanvas-body li{
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        transition: .3s;
+        transition: transform .2s;
+    }
+
+
+
+    .offcanvas-body li:hover{
+        background-color: var(--verde--);
+        border-radius: 5px;
+        transform: scale(1.1);
+    }
+
+    .offcanvas-body li a:hover{
+        color: var(--rojo--);
+    }
+
+    .nav-item-1{
+        background-color: var(--verde--);
+        border-radius: 5px;
+    }
+
+    .content_perfil{
+        margin-top: 25px;
+        position: relative;
+        left: 18%;
+    }
+
+    .content_perfil li a img{
+        width: 40px;
+    }
+
+    .content_perfil li a {
+        text-decoration: none;
+    }
+
+    .menu a{
+        color: var(--negro--);
+    }
+
+    .dropdown-menu a{
+        color: var(--negro--);
+        display: block;
+        text-align: center;
+        
+    }
+
+
+    /* MAIN */
+    .content_main{
+        text-align: center;
+        margin-top: 9rem;
+    }
+
+    .content_main h1{
+        font-size: 2.5rem;
+        color: var(--verde--);
+        font-weight: 800;
+    }
+
+    .content_main p{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .button_instancia button{
+        padding: 15px 25px 15px 25px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--verde--);
+        transition: transform .2s;
+    }
+
+    .button_instancia button:hover{
+        transform: scale(1.1);
+        color: var(--rojo--);
+    }
+
+    footer{
+        background-color: var(--negro--);
+        margin-top: 32%;
+        height: 3rem;
+        text-align: center;
+    }
+
+    footer h6{
+        position: relative;
+        top: 15px;
+        color: var(--blanco--);
+    }
+
+
+
+        
+    
+
+
+
+

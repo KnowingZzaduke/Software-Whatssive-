@@ -15,69 +15,50 @@
 <body>
     <header>
         <nav class="navar">
-            <div class="navar_1">
-                <div class="content_nav-min">    
-                    <div class="content_video">
-                        <video autoplay muted class="black">
-                            <source src="../videos/Whatssive.mp4" type="video/mp4">
-                        </video>                     
-                    </div>           
-                    <nav class="navbar navbar-dark bg-black min">
-                        <div class="container-fluid content_navbar">
-                          <a class="navbar-brand" href="#">
-                            <div class="content_video">       
-                                <video autoplay muted class="black-min">
-                                    <source src="../videos/Whatssive.mp4" type="video/mp4">
-                                </video>
-                            </div>
-                          </a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="offcanvas-body content_list" id="navbarNav">
-                            <ul class="navbar-nav" style="color: white;">
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Api de whatsapp</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Tutoriales</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link">Quienes somos</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link">Iniciar Sesión	</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
+            <nav class="navbar navbar-expand-lg bg-black">
+                <div class="container-fluid">
+                  <a class="navbar-brand content_logo" href="#">
+                    <video src="../videos/Whatssive.mp4" autoplay muted></video>
+                  </a>
+
+                  <a class="navbar-brand content_logo2" href="#">
+                    <video src="../videos/Whatssive-white.mp4" autoplay muted class="video_small"></video>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link"href="#">Inicio</a>
+                      <a class="nav-link" href="#">Api de whatsapp</a>
+                      <a class="nav-link" href="#">Tutoriales</a>
+                      <a class="nav-link" href="">Quienes somos</a>
+                      <a class="nav-link" href="">Iniciar sesión</a>
+                    </div>
+                  </div>
                 </div>
-               <div class="cont-menu" id="menú">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Api de whatsapp</a></li>
-                        <li><a href="#">Tutoriales</a></li>
-                        <li><a href="#">Quienes somos</a></li>
-                        <li><a href="/views/formularios/form_iniciar.html   " target="_blank">Iniciar Sesión</a></li>
-                    </ul>
-                </div> 
-               
-            </div>
+              </nav>
         </nav>
     </header>
 
     <section class="firt_section">
         <div class="content_all-firt-section">
-            <div class="title_content">
-                <h1>Api de whatsapp</h1>
-                <h3>Envía mensajes por (Precio) al mes</h3>
+            <div class="content_absolute">
+                <div class="title_content">
+                    <h1>Api de whatsapp</h1>
+                    <h3>Envía mensajes por (Precio) al mes</h3>
+                    <div class="button_content">
+                        <a href="#"><button class="api_button">Compra aquí</button></a>
+                        <a href="#"><button class="api_button">Documentación</button></a>  
+                    </div>
+                </div>
+                <div class="content_img">
+                    <img src="../images/Full Inbox _Monochromatic.png" alt="">
+                </div>
             </div>
+           
+
             
-            <div class="button_content">
-                <a href="#"><button class="api_button">Compra aquí</button></a>
-                <a href="#"><button class="api_button">Documentación</button></a>  
-            </div>
         </div>
         
     </section> 
@@ -85,23 +66,23 @@
     <section class="second_section">
         <div class="intro_content">
             <h1>Como funciona?</h1>
-            h4Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
+            <p>Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
         </div>
 
         <div class="info_content">
             <div class="info">
-                <img src="../images/alt-de-inicio-de-sesion.svg" alt="login" class="icon_login">
+                <img src="../images/alt-de-inicio-de-sesion.svg" alt="login" class="icon">
                 <h3>Crea una cuenta</h3>
                 <p>Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
             </div>
 
             <div class="info">
-                <img src="../images/codigo-qr.png" alt="Qr code" class="icon_qr">
+                <img src="../images/codigo-qr.png" alt="Qr code" class="icon">
                 <h3>Escanea el código QR</h3>
                 <p>Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
             </div>
                 <div class="info">
-                     <img src="../images/enviar-mensajes-de-texto.png" alt="login" class="icon_login">
+                     <img src="../images/enviar-mensajes-de-texto.png" alt="login" class="icon">
                     <h3>Envía mensajes</h3>
                     <p>Lorem ipsum dolor sit amet consra plaatur sunt lat vitae placeat?</p>
                 </div>
@@ -202,7 +183,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="all_content-footer">
             <center>
                 <img src="../images/Whatssive.png" alt="Logo Whatssive">
