@@ -1,8 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-const engine = require('express-handlebars');
+const fs = require("fs");
+const { create } = require('express-handlebars');
 const session = require('express-session');
+const sass = require('sass');
 const validator = require('express-validator');
 const passport = require('passport');
 const flash = require('connect-flash');
@@ -16,16 +18,29 @@ const app = express();
 require('./lib/passport');
 require('./lib/whatsapp');
 
+const result = sass.compile("./src/scss/app.scss");
+
+fs.writeFile("src/public/css/books.css", result.css, (err) => {
+  if (err)
+    console.log(err);
+  else {
+    console.log("File written successfully\n");
+  }
+});
 // Settings
 app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('.hbs', engine({
-  defaultLayout: 'main',
-  layoutsDir: path.join(app.get('views'), 'layouts'),
-  partialsDir: path.join(app.get('views'), 'partials'),
-  extname: '.hbs',
+app.engine(
+  ".hbs",
+  create({
+    layoutsDir: path.join(app.get("views"), "layouts"),
+    partialsDir: path.join(app.get("views"), "partials"),
+    defaulLayout: "main",
+    extname: ".hbs",
   helpers: require('./lib/handlebars')
-}))
+  }).engine
+);
+
 app.set('view engine', '.hbs');
 
 // Middlewares
@@ -42,7 +57,7 @@ app.use(session({
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
-app.use(validator());
+//app.use(validator);
 
 // Global variables
 app.use((req, res, next) => {
