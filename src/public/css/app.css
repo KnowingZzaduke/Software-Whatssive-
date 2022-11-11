@@ -1,3 +1,99 @@
+header {
+  background-color: #EAEDED;
+  height: 820px;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 1;
+}
+.navbar .content_logo video {
+  width: 100px;
+}
+.navbar .content_enlaces {
+  margin: 0% auto;
+  padding-top: 1rem;
+}
+.navbar .content_enlaces ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.navbar .content_enlaces ul li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar .content_enlaces ul li a:hover {
+  color: #52BE80;
+}
+.navbar .content_navbar-small {
+  display: none;
+}
+
+.content_all-firt-section .content_absolute {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+.content_all-firt-section .content_absolute .title_content {
+  position: relative;
+  top: 40%;
+  left: 40%;
+}
+.content_all-firt-section .content_absolute .title_content h1 {
+  font-size: 3rem;
+}
+.content_all-firt-section .content_absolute .title_content p {
+  font-size: 1.5rem;
+}
+.content_all-firt-section .content_absolute .title_content .button_content {
+  margin-top: 2rem;
+}
+.content_all-firt-section .content_absolute .title_content .button_content a .api_button {
+  padding: 20px 40px 20px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #52BE80;
+  transition: 0.25s ease;
+  margin: 0 5px;
+}
+.content_all-firt-section .content_absolute .title_content .button_content a .api_button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.content_all-firt-section .content_absolute .content_img img {
+  padding-top: 2rem;
+}
+
+*, *::before,
+*, ::after {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #52BE80;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

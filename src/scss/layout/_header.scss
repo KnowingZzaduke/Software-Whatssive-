@@ -1,7 +1,97 @@
-@use '../base/variables';
-body{
-    background-color: rgb(255, 255, 255) !important;
+@use '../base/variables' as v;
+
+header{
+    background-color: v.$gris;
+    height: 820px;
 }
-.api_button{
-    color: rgb(0, 0, 0) !important;
+
+.navbar{
+    background-color: v.$negro;
+    display: flex;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+
+
+
+    .content_logo{
+        video{
+            width: 100px;
+        }
+    }
+
+    .content_enlaces{
+        margin: 0% auto;
+        padding-top: 1rem;
+        ul{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            li{
+               a{
+                color: v.$blanco;
+                text-decoration: none;
+
+                &:hover{
+                    color: v.$verde;
+                }
+               }
+            }
+        }
+    }
+
+    .content_navbar-small{
+        display: none;
+    }
+}
+
+.content_all-firt-section{
+    .content_absolute{
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+
+        .title_content{
+            position: relative;
+            top: 40%;
+            left: 40%;
+            
+            
+            h1{
+                font-size: v.$titulo;
+            }
+
+            p{
+                font-size: v.$parrafo
+            }
+
+            .button_content{
+                margin-top: 2rem;
+               
+                a{
+                    .api_button{
+                        padding: 20px 40px 20px 40px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: v.$verde;
+                        transition: .25s ease;
+                        margin: 0 5px;
+        
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .content_img{
+            img{
+                padding-top: 2rem;
+            }
+        }
+    }
 }
