@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 header{
     background-color: v.$gris;
@@ -92,6 +93,19 @@ header{
             img{
                 padding-top: 2rem;
             }
+        }
+    }
+}
+
+//Versión responsive
+.navbar{
+    @include m.phone{
+        .content_enlaces{
+            display: none;
+        }
+
+        .content_navbar-small{
+            display: block;
         }
     }
 }
