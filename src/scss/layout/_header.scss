@@ -106,6 +106,114 @@ header{
 
         .content_navbar-small{
             display: block;
+
+            .hamburguesa{
+                width: 60px;
+                height: 40px;
+                position: absolute;
+                left: 0%;
+                top: 7px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .content_menu-desplegable{
+                background-color: v.$negro;
+                top: 0%;
+                left: 0%;
+                position: fixed;
+                visibility: inherit;
+                z-index: 1;
+                bottom: 0%;
+                width: 180px;
+
+                .content_menu{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    h4{
+                        color: v.$blanco;
+                        margin: 0% auto;
+                        position: relative;
+                        top: 10px;
+                    }
+                    .cerrar{
+                        width: 40px;
+                        height: 40px;
+                        background-color: v.$blanco;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .content_enlaces-small{
+                    ul{
+                        padding-top: 1rem;
+                        li{
+                            background-color: v.$blanco;
+                            margin: 0% auto;
+                            list-style: none;
+                            margin-top: 1rem;
+                            padding: 10px 0;
+                            width: 90%;
+                            text-align: center;
+                            border-radius: 5px;
+                            transition: .25s;
+
+
+                            &:hover{
+                                cursor: pointer;
+                                transform: scale(1.1);
+                                color: v.$verde
+                            }
+    
+                            a{
+                                text-decoration: none;
+                                color: v.$negro;
+                            }
+                        }
+                    }
+                }
+            }
+
+           
         }
     }
+}
+
+//Primera Sección Responsive
+.content_all-firt-section{
+   @include m.phone{
+    .content_absolute{
+        display: block;
+
+        .title_content{
+            position: relative;
+            top: 0%;
+            left: 0%;
+            padding-left: 1rem;
+
+            .button_content{
+                display: block;
+
+                .api_button{
+                    width: 210px;
+                    position: relative;
+                }
+            }
+
+           
+        }
+
+        .content_img{
+            img{
+                width: 100px;
+            }
+        }
+    }
+   }
 }
