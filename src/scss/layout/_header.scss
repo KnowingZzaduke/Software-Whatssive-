@@ -19,14 +19,18 @@ header{
 
     .content_logo{
         video{
-            width: 100px;
+            width: 80px;
+            position: relative;
+            left: 3rem;
         }
     }
 
     .content_enlaces{
         margin: 0% auto;
-        padding-top: 1rem;
+        
+        
         ul{
+            padding-top: 30px;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             li{
@@ -79,6 +83,7 @@ header{
                         background-color: v.$verde;
                         transition: .25s ease;
                         margin: 0 5px;
+                        width: 210px;
         
                         &:hover{
                             cursor: pointer;
@@ -108,11 +113,12 @@ header{
             display: block;
 
             .hamburguesa{
-                width: 60px;
-                height: 40px;
+                width: 50px;
+                height: 50px;
                 position: absolute;
-                left: 0%;
-                top: 7px;
+                right: 2%;
+                top: 12px;
+                filter: invert(100%);
 
                 &:hover{
                     cursor: pointer;
@@ -128,6 +134,8 @@ header{
                 z-index: 1;
                 bottom: 0%;
                 width: 180px;
+                transition: 0.5s;
+
 
                 .content_menu{
                     display: grid;
@@ -140,9 +148,11 @@ header{
                         top: 10px;
                     }
                     .cerrar{
-                        width: 40px;
-                        height: 40px;
-                        background-color: v.$blanco;
+                        width: 20px;
+                        height: 20px;
+                        filter: invert(100%);
+                        position: relative;
+                        top: 10px;
 
                         &:hover{
                             cursor: pointer;
@@ -183,6 +193,102 @@ header{
            
         }
     }
+
+    @include m.tablet{
+        .content_enlaces{
+            display: none;
+        }
+
+        .content_navbar-small{
+            display: block;
+
+            .hamburguesa{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                right: 2%;
+                top: 12px;
+                filter: invert(100%);
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .content_menu-desplegable{
+                background-color: v.$negro;
+                top: 0%;
+                left: 0%;
+                position: fixed;
+                visibility: inherit;
+                z-index: 1;
+                bottom: 0%;
+                width: 250px;
+                transition: 0.5s;
+
+                .content_menu{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    h4{
+                        color: v.$blanco;
+                        margin: 0% auto;
+                        position: relative;
+                        top: 10px;
+                    }
+                    .cerrar{
+                        width: 20px;
+                        height: 20px;
+                        filter: invert(100%);
+                        position: relative;
+                        top: 10px;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .content_enlaces-small{
+                    ul{
+                        padding-top: 1rem;
+                        li{
+                            background-color: v.$blanco;
+                            margin: 0% auto;
+                            list-style: none;
+                            margin-top: 1rem;
+                            padding: 10px 0;
+                            width: 90%;
+                            text-align: center;
+                            border-radius: 5px;
+                            transition: .25s;
+
+
+                            &:hover{
+                                cursor: pointer;
+                                transform: scale(1.1);
+                                color: v.$verde
+                            }
+    
+                            a{
+                                text-decoration: none;
+                                color: v.$negro;
+                            }
+                        }
+                    }
+                }
+            }
+
+           
+        }
+    }
+
+    @include m.desktop{
+        .content_logo{
+            display: none;
+        }
+        
+    }
 }
 
 //Primera Sección Responsive
@@ -193,16 +299,26 @@ header{
 
         .title_content{
             position: relative;
-            top: 0%;
-            left: 0%;
             padding-left: 1rem;
+            left: 0%;
+
+            h1{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
 
             .button_content{
                 display: block;
+                text-align: center;
 
-                .api_button{
-                    width: 210px;
-                    position: relative;
+                a{
+                    .api_button{
+                        width: 210px;
+                        margin-top: 20px;
+                    }
                 }
             }
 
@@ -210,8 +326,59 @@ header{
         }
 
         .content_img{
+            text-align: center;
             img{
-                width: 100px;
+                width: 300px;
+            }
+        }
+    }
+   }
+
+   @include m.tablet{
+    .content_absolute{
+        display: block;
+
+        .title_content{
+            position: relative;
+            left: 0%;
+            padding-left: 1rem;
+
+            h1{
+                text-align: center;
+            }
+
+            p{
+                text-align: center;
+            }
+
+            .button_content{
+                text-align: center;
+
+                a{
+                    .api_button{
+                        width: 210px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+           
+        }
+
+        .content_img{
+            text-align: center;
+            img{
+                width: 400px;
+            }
+        }
+    }
+   }
+
+   @include m.desktop{
+    .button_content{
+        a{
+            .api_button{
+                margin-top: 20px;
             }
         }
     }

@@ -13,7 +13,7 @@
 }
 
 @mixin desktop {
-    @media only screen and (min-width: v.$desktop){
+    @media only screen and (min-width: v.$desktop-min) and (max-width: v.$desktop-max){
         @content;
     }
 }
