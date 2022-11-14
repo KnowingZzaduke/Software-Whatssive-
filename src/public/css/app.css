@@ -528,6 +528,38 @@ header {
   }
 }
 
+.footer {
+  background-color: black;
+}
+.footer .all_content-footer center img {
+  width: 80px;
+}
+.footer .all_content-footer center p {
+  font-size: 1.1rem;
+  color: white;
+}
+.footer .all_content-footer .enlaces_footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+.footer .all_content-footer .enlaces_footer h2 {
+  color: white;
+}
+.footer .all_content-footer .enlaces_footer ul li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.footer .all_content-footer .enlaces_footer ul li a {
+  color: white;
+}
+.footer .all_content-footer .enlaces_footer ul li a:hover {
+  color: #52BE80;
+}
+.footer .all_content-footer .copright h6 {
+  color: white;
+  text-align: center;
+}
+
 *, *::before,
 *, ::after {
   padding: 0%;

@@ -1,0 +1,47 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer{
+    background-color: v.$negro;
+    .all_content-footer{
+        center{
+            img{
+                width: 80px;
+            }
+
+            p{
+                font-size: 1.1rem;
+                color: v.$blanco;
+            }
+        }
+        
+        .enlaces_footer{
+            margin-top: 2rem;
+            text-align: center;
+
+            h2{
+                color: v.$blanco;
+            }
+
+            ul{
+                li{
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    a{
+                        color: v.$blanco;
+
+                        &:hover{
+                            color: v.$verde;
+                        }
+                    }
+                }
+            }
+        }
+        .copright{
+            h6{
+                color: v.$blanco;
+                text-align: center;
+            }
+        }
+    }
+}
