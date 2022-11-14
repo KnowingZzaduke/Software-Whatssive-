@@ -282,13 +282,6 @@ header{
            
         }
     }
-
-    @include m.desktop{
-        .content_logo{
-            display: none;
-        }
-        
-    }
 }
 
 //Primera Sección Responsive
@@ -374,11 +367,16 @@ header{
     }
    }
 
+
+   //Terminar
    @include m.desktop{
-    .button_content{
-        a{
-            .api_button{
-                margin-top: 20px;
+    .content_absolute{
+        display: block;
+        height: auto;
+
+        .title_content{
+            .button_content{
+                display: block;
             }
         }
     }

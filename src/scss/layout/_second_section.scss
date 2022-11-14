@@ -1,0 +1,72 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.second_section{
+    .intro_content{
+        text-align: center;
+
+        h1{
+            font-size: v.$titulo;
+            font-weight: 900;
+            margin: 0%;
+            padding-top: 2rem;
+        }
+
+        p{
+            font-size: v.$parrafo;
+        }
+    }
+
+    .info_content{
+        display: flex;
+        padding: 60px 0;
+
+        .info{
+            text-align: center;
+            .icon{
+                width: 150px;
+            }
+
+            h2{
+                font-weight: 800;
+                text-align: center;
+            }
+        }
+    }
+}
+
+//Versión responsive
+.second_section{
+    @include m.phone{
+        .info_content{
+            display: block;
+    
+            .info{
+                margin-top: 2rem;
+                .icon{
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    @include m.tablet{
+        .info_content{
+            display: block;
+    
+            .info{
+                margin-top: 2rem;
+                .icon{
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        .info_content{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

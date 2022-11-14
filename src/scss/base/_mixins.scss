@@ -16,9 +16,10 @@
     @media only screen and (min-width: v.$desktop-min) and (max-width: v.$desktop-max){
         @content;
     }
+    
 }
 
-@mixin destopXl {
+@mixin desktopXl {
     @media only screen and (min-width: v.$desktopXl){
         @content;
     }
