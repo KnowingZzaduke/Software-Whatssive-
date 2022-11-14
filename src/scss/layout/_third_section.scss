@@ -1,0 +1,102 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.third_section{
+    background-color: v.$gris;
+    .title_content{
+        padding-top: 2rem;
+
+        h1{
+            font-size: v.$titulo;
+            text-align: center;
+        }
+
+        p{
+            font-size: v.$parrafo;
+            text-align: center;
+        }
+
+    }
+
+    .api_content{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+        .api_info{
+            .list_content{
+                display: flex;
+                margin-top: 1rem;
+
+                img{
+                    width: 50px;
+                }
+
+                p{
+                    margin-left: 10px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+
+//Versión responsive
+.third_section{
+    @include m.phone{
+        .api_content{
+            display: block;
+
+            .api_info{
+                h1{
+                    text-align: center;
+                }
+                .list_content{
+                    justify-content: center;
+                    img{
+                        width: 20px;
+                        position: absolute;
+                        left: 6%;
+                        margin-top: 15px;
+                    }
+            }
+        }
+    }
+}
+
+    @include m.tablet{
+        .api_content{
+            display: block;
+
+            .api_info{
+                h1{
+                    text-align: center;
+                }
+                .list_content{
+                    justify-content: center;
+                    img{
+                        width: 30px;
+                        margin-top: 5px;
+                    }
+
+                    p{
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    @include m.desktop{
+        .api_content{
+            .api_info{
+                .list_content{
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

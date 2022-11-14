@@ -23,6 +23,7 @@
 
         .info{
             text-align: center;
+            margin: 0% auto;
             .icon{
                 width: 150px;
             }
@@ -67,6 +68,10 @@
         .info_content{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+
+            .info{
+                margin-top: 4rem;
+            }
         }
     }
 }

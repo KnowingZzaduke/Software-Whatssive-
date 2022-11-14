@@ -372,12 +372,14 @@ header{
    @include m.desktop{
     .content_absolute{
         display: block;
-        height: auto;
 
         .title_content{
-            .button_content{
-                display: block;
-            }
+            left: 0%;
+            text-align: center;
+        }
+
+        .content_img{
+            text-align: center;
         }
     }
    }

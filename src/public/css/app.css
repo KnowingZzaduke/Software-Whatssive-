@@ -282,10 +282,13 @@ header {
 @media only screen and (min-width: 769px) and (max-width: 1199px) {
   .content_all-firt-section .content_absolute {
     display: block;
-    height: auto;
   }
-  .content_all-firt-section .content_absolute .title_content .button_content {
-    display: block;
+  .content_all-firt-section .content_absolute .title_content {
+    left: 0%;
+    text-align: center;
+  }
+  .content_all-firt-section .content_absolute .content_img {
+    text-align: center;
   }
 }
 
@@ -307,6 +310,7 @@ header {
 }
 .second_section .info_content .info {
   text-align: center;
+  margin: 0% auto;
 }
 .second_section .info_content .info .icon {
   width: 150px;
@@ -342,6 +346,82 @@ header {
   .second_section .info_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .second_section .info_content .info {
+    margin-top: 4rem;
+  }
+}
+
+.third_section {
+  background-color: #EAEDED;
+}
+.third_section .title_content {
+  padding-top: 2rem;
+}
+.third_section .title_content h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.third_section .title_content p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.third_section .api_content {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.third_section .api_content .api_info .list_content {
+  display: flex;
+  margin-top: 1rem;
+}
+.third_section .api_content .api_info .list_content img {
+  width: 50px;
+}
+.third_section .api_content .api_info .list_content p {
+  margin-left: 10px;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 480px) {
+  .third_section .api_content {
+    display: block;
+  }
+  .third_section .api_content .api_info h1 {
+    text-align: center;
+  }
+  .third_section .api_content .api_info .list_content {
+    justify-content: center;
+  }
+  .third_section .api_content .api_info .list_content img {
+    width: 20px;
+    position: absolute;
+    left: 6%;
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .third_section .api_content {
+    display: block;
+  }
+  .third_section .api_content .api_info h1 {
+    text-align: center;
+  }
+  .third_section .api_content .api_info .list_content {
+    justify-content: center;
+  }
+  .third_section .api_content .api_info .list_content img {
+    width: 30px;
+    margin-top: 5px;
+  }
+  .third_section .api_content .api_info .list_content p {
+    line-height: normal;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .third_section .api_content .api_info .list_content img {
+    width: 40px;
   }
 }
 
