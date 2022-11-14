@@ -55,3 +55,90 @@
         }
     }
 }
+
+//Versión responsive
+.fourth_section{
+   @include m.phone{
+    .content_faq{
+        display: block;
+        
+        .content{
+            padding-bottom: 0%;
+
+            .content_info-faq{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .content{
+        .contactar{
+            text-align: center;
+            img{
+                display: none;
+            }
+
+            a{
+                position: relative;
+                right: 30px;
+            }
+        }
+    }
+   }
+
+   @include m.tablet{
+    .content_faq{
+        display: block;
+        
+        .content{
+            padding-bottom: 0%;
+
+            .content_info-faq{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .content{
+        .contactar{
+            text-align: center;
+            img{
+                display: none;
+            }
+
+            a{
+                position: relative;
+                right: 30px;
+            }
+        }
+    }
+   }
+
+   @include m.desktop{
+    .content_faq{
+        display: block;
+        
+        .content{
+            padding-bottom: 0%;
+
+            .content_info-faq{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .content{
+        .contactar{
+            text-align: center;
+            img{
+                display: none;
+            }
+
+            a{
+                position: relative;
+                right: 30px;
+            }
+        }
+    }
+   }
+}
