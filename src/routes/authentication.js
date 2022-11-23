@@ -6,7 +6,7 @@ const { isLoggedIn } = require('../lib/auth');
 
 // SIGNUP
 router.get('/signup', (req, res) => {
-  res.render('auth/signup');
+  res.render('auth/registrar');
 });
 
 router.post('/signup', passport.authenticate('local.signup', {
@@ -17,7 +17,7 @@ router.post('/signup', passport.authenticate('local.signup', {
 
 // SINGIN
 router.get('/signin', (req, res) => {
-  res.render('auth/signin');
+  res.render('auth/iniciar');
 });
 
 router.post('/signin', (req, res, next) => {
