@@ -7,50 +7,58 @@
     <title>Iniciar Sesión</title>
 </head>
 <body style="margin-top: 100px;">
-    <div class="content_iniciar">
-        <form action="#">
-            <div class="content_logo">
-                <img src="" alt="">
+    <form action="" class="formulario_iniciar-sesion">
+        <div class="content_all-formulario">
+            <div class="content_header-formulario">
+                <div class="content_logo-formulario">
+                    <video src="../../../src/public/video/Whatssive-white.mp4" autoplay muted></video>
+                </div>
+                
+                <div class="content_bienvenida">
+                    <h4>Bienvenido/a</h4>
+                    <p>Ingresa tu cuenta</p>
+                </div>
             </div>
 
-            <div class="content_parrafo-bienvenido">
-                <p>Bienvenido/a</p>
-            </div>
-            <div class="content_campo">
-                <label for="">Correo</label>
-                <input type="email" name="email" id="email">
+            <div class="content_main-formulario">
+                <div class="campo">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="user" placeholder="Usuario">
+                </div>
+
+                <div class="campo">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="Contraseña">
+                </div>
+
+                <div class="content_olvido-contraseña">
+                    <a href="#">
+                        <p>¿Olvidaste tu contraseña?</p>
+                    </a>
+                </div>
+
+                <div class="content_button-iniciar-sesion">
+                    <a href="#"><button type="submit">Iniciar Sesión</button></a>
+                </div>
             </div>
 
-             <div class="content_campo">
-                <label for="">Contraseña</label>
-                <input type="password" name="password" id="password">
+            <div class="content_footer-formulario">
+                <div class="content_parrafo-no-tienes-cuenta">
+                    <p>¿No tienes cuenta?</p>
+                </div>
+
+                <div class="content_button-crear-cuenta">
+                    <a href="#"><button>Crear tu cuenta</button></a>
+                </div>
+
+                <div class="content_terminos-condiciones">
+                    <p>Al ingresar confirmas que has leído nuestros <a href="#">Términos y condiciones</a>y <a href="#">Política de privacidad</a></p>
+                </div>
             </div>
 
-            <div>
-                <a href="#">
-                    <p>¿Olvidaste tu contraseña?</p>
-                </a>
-            </div>
+        </div>
+        
+    </form>
 
-            <div class="content_button">
-                <button>Iniciar Sesión</button>
-            </div>
-
-            <hr>
-
-            <div class="content_no-cuenta">
-                <p>¿No tienes una cuenta?</p>
-            </div>
-
-            <div class="content_button-crear">
-                <a href="/signup" >Crear cuenta</a>
-            </div>
-
-            <div class="content_terminos-condiciones">
-                <p>Al ingresar confirmas que aceptas nuestros <a href="#">términos y condiciones</a></p>
-            </div>
-        </form>
-    </div>
-    
 </body>
 </html>

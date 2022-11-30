@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-color: #EAEDED;
 }
@@ -896,6 +897,64 @@ template {
   display: none;
 }
 
-form {
-  background-color: negro;
+.formulario_iniciar-sesion {
+  background-color: #EAEDED;
+  text-align: center;
+  width: 348px;
+  margin: 0% auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.formulario_iniciar-sesion .content_all-formulario {
+  padding: 1.5rem;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_header-formulario .content_bienvenida p {
+  opacity: 70%;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario {
+  margin-top: 1rem;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo {
+  background-color: white;
+  width: 300px;
+  border-radius: 50px;
+  margin: 0% auto;
+  margin-bottom: 1.5rem;
+  align-items: center;
+  display: flex;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo i {
+  margin: 0 20px;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo input {
+  border: none;
+  height: 45px;
+  width: 100%;
+  border-radius: 50px;
+  outline: none;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a:hover {
+  cursor: pointer;
+  color: #52BE80;
+  text-decoration: underline;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a p {
+  margin-top: 1rem;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-iniciar-sesion {
+  width: 300px;
+  margin: 1rem auto;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-iniciar-sesion a button {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 60px;
+  color: white;
+  transition: 0.25s;
+  background-color: #52BE80;
+}
+.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-iniciar-sesion a button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
