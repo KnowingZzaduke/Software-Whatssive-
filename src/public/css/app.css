@@ -895,3 +895,7 @@ template {
 [hidden] {
   display: none;
 }
+
+form {
+  background-color: negro;
+}
