@@ -24,3 +24,19 @@
         @content;
     }
 }
+
+@mixin button {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 60px;
+    color: v.$blanco;
+    transition: .25s;
+    background-color: v.$verde;
+
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    @content;
+}

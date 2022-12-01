@@ -4,81 +4,145 @@
 .formulario_iniciar-sesion{
     background-color: v.$gris;
     text-align: center;
-    width: 348px;
+    width: 448px;
     margin: 0% auto;
     border-radius: 5px;
     margin-bottom: 1rem;
+    box-shadow: 0 0 10px 1px v.$verde;
     
    .content_all-formulario{
-    padding: 1.5rem;
-    .content_header-formulario{
-        .content_bienvenida{
-            p{
-                opacity: 70%;
+        padding: 1.5rem;
+        .content_header-formulario{
+            .content_bienvenida{
+                p{
+                    opacity: 70%;
+                }
             }
         }
-    }
 
-    .content_main-formulario{
-        margin-top: 1rem;
+        .content_main-formulario{
+            margin-top: 1rem;
 
-        .campo{
-            background-color: v.$blanco;
-            width: 300px;
-            border-radius: 50px;
-            margin: 0% auto;
-            margin-bottom: 1.5rem;
-            align-items: center;
-            display: flex;
-
-            i{
-                margin: 0 20px;
-            }
-
-            input{
-                border: none;
-                height: 45px;
+            .campo{
+                background-color: v.$blanco;
                 width: 100%;
                 border-radius: 50px;
-                outline: none;
-            }
-        }
+                margin: 0% auto;
+                margin-bottom: 1.5rem;
+                align-items: center;
+                display: flex;
 
-        .content_olvido-contraseña{
-            a{
-                &:hover{
-                    cursor: pointer;
-                    color: v.$verde;
-                    text-decoration: underline;
+                i{
+                    margin: 0 20px;
+                }
+
+                input{
+                    border: none;
+                    height: 45px;
+                    width: 100%;
+                    border-radius: 50px;
+                    outline: none;
+                }
+            }
+
+            .campo_select{
+                height: 45px;
+                background-color: v.$blanco;
+                border-radius: 50px;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+
+                i{
+                    margin: 0 20px;
+                }
+
+                select{
+                    width: 80%;
+                    border: none;
+                    outline: none;
+                    border-radius: 50px;
+                }
+            }
+            
+            .campo_checklist{
+                display: flex;
+
+                input{
+                    width: 40px;
                 }
 
                 p{
-                    margin-top: 1rem;
-                }
-            }
-        }
+                    font-size: 12px;
 
-        .content_button-iniciar-sesion{
-            width: 300px;
-            margin: 1rem auto;
-            a{
-                button{
-                    width: 100%;
-                    border: none;
-                    border-radius: 50px;
-                    padding: 10px 60px;
-                    color: v.$blanco;
-                    transition: .25s;
-                    background-color: v.$verde;
-
-                    &:hover{
-                        transform: scale(1.1);
-                        cursor: pointer;
+                    a{
+                        &:hover{
+                            text-decoration: underline;
+                            color: v.$verde;
+                        }
                     }
                 }
             }
+
+            .content_olvido-contraseña{
+                a{
+                    &:hover{
+                        cursor: pointer;
+                        color: v.$verde;
+                        text-decoration: underline;
+                    }
+
+                    p{
+                        margin-top: 1rem;
+
+                        a{
+                            &:hover{
+                                text-decoration: underline;
+                                color: v.$verde;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .content_button-crear-cuenta-iniciar-sesion{
+                width: 100%;
+                margin: 1rem auto;
+               
+                    button{
+                        @include m.button
+                    }
+            }
         }
-    }
-   }
-    
+
+        .content_footer-formulario{
+            margin-top: 1rem;
+
+            .content_parrafo-no-tienes-cuenta{
+                p{
+                    opacity: 40%;
+                }
+            }
+
+            .content_button-crear-cuenta-iniciar-sesion{
+                a{
+                    button{
+                        @include m.button{
+                            background-color: v.$blanco;
+                            color: v.$negro;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+
+            .content_terminos-condiciones{
+                margin-top: 1rem;
+
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }  
 }

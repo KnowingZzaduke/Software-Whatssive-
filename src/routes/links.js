@@ -12,6 +12,8 @@ router.get('/QuienesSomos', (req, res) => {
     res.render('links/Quienes');
 });
 
+
+
 router.post('/add', async (req, res) => {
     const { title, url, description } = req.body;
     const newLink = {
