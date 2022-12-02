@@ -569,6 +569,7 @@ header {
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
@@ -586,6 +587,15 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1020,4 +1030,174 @@ template {
 }
 .formulario .content_all-formulario .content_footer-formulario .content_terminos-condiciones p {
   font-size: 15px;
+}
+
+.header_bienvenida {
+  height: 48px;
+  align-items: center;
+}
+.header_bienvenida .content_all-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header_bienvenida .content_all-buttons .content_button-hamburguesa .abrir {
+  margin: 1rem;
+  cursor: pointer;
+}
+.header_bienvenida .content_all-buttons .content_user {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.header_bienvenida .content_all-buttons .content_user i {
+  margin-left: 1rem;
+}
+.header_bienvenida .content_all-buttons .content_user .content_info-user {
+  display: flex;
+}
+.header_bienvenida .content_all-buttons .content_user .content_info-user p {
+  font-size: 15px;
+  margin-left: 1rem;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user {
+  display: block;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul {
+  position: absolute;
+  list-style: none;
+  margin-top: 15px;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li {
+  padding: 10px 30px;
+  background-color: #52BE80;
+  list-style: none;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a i {
+  margin-right: 1rem;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p {
+  font-size: 15px;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p:hover {
+  text-decoration: underline;
+}
+.header_bienvenida .content_menu-desplegable {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  z-index: 99;
+  background-color: #566573;
+  width: 270px;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .content_button-cerrar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 10px 0 10px 10px;
+  cursor: pointer;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .content_button-cerrar p {
+  text-align: center;
+  color: #52BE80;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .content_button-cerrar i {
+  text-align: center;
+  margin: 10px 0 10px 10px;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable {
+  display: block;
+  margin-top: 1rem;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul :first-child a {
+  background-color: #52BE80;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul li {
+  margin-top: 1.7rem;
+  width: 95%;
+  transition: 0.25s;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #52BE80;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul li a {
+  display: flex;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul li a i {
+  margin-left: 15px;
+}
+.header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul li a p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+  height: 820px;
+  align-items: center;
+  justify-content: center;
+}
+main .content_bienvenida {
+  text-align: center;
+}
+main .content_bienvenida h2 {
+  font-size: 3rem;
+}
+main .content_bienvenida .content_instancias {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+main .content_bienvenida .content_instancias a button {
+  display: flex;
+  margin-top: 1rem;
+  background-color: #52BE80;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  align-items: center;
+  transition: 0.25s;
+}
+main .content_bienvenida .content_instancias a button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+main .content_bienvenida .content_instancias a button i {
+  margin: 5px;
+}
+main .content_bienvenida .content_instancias a button p {
+  margin: 5px;
+}
+
+footer {
+  background-color: #EAEDED;
+}
+footer .content_footer {
+  text-align: center;
+  padding: 1rem;
+}
+footer .content_footer p a {
+  color: black;
+  text-decoration: underline;
+}
+footer .content_footer p a:hover {
+  color: #52BE80;
 }

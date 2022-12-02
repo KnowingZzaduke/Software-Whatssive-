@@ -1,18 +1,30 @@
-const toggleHamburguesa = document.querySelector('.abrir');
-const toggleCerrar = document.querySelector('.cerrar');
-const menuDesplegable = document.querySelector('.content_menu-desplegable');
+//Varibales de la página principal
+const toggleHamburguesaPp = document.querySelector('.hamburguesa');
+const toggleCerrarPp = document.querySelector('.cerrar');
+//Variables de la página de bienvenida
+const toggleHamburguesaPb = document.querySelector('.abrir');
+const toggleCerrarPb = document.querySelector('.cerrar');
+const menuDesplegablePb = document.querySelector('.content_menu-desplegable');
 const toggleDesplegar = document.querySelector('.desplegar');
 const toggleContraer = document.querySelector('.contraer');
 const contentDesplegar = document.querySelector('.content_desplegable');
 
+//FUNCIONES DE LA PÁGINA PRINCIPAL
+
+//Función abrir
+toggleHamburguesaPp.addEventListener('click', function(){
+    menuDesplegablePb.style.display = ('block')
+})
+
+//FUNCIONES DE PÁGINA DE BIENVENIDA
 //Función para abrir
-toggleHamburguesa.addEventListener('click', function(){
-    menuDesplegable.style.display = ('block');
+toggleHamburguesaPb.addEventListener('click', function(){
+    menuDesplegablePb.style.display = ('block');
 })
 
 //Función para cerrar
-toggleCerrar.addEventListener('click', function(){
-    menuDesplegable.style.display =  ('none');
+toggleCerrarPb.addEventListener('click', function(){
+    menuDesplegablePb.style.display =  ('none');
 })
 
 //Función desplegar
