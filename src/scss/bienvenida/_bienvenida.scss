@@ -2,13 +2,16 @@
 @use '../base/mixins' as m;
 
 .header_bienvenida{
+    height: 48px;
+    align-items: center;
     .content_all-buttons{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
         .content_button-hamburguesa{
-            .icon{
+            .abrir{
                 margin: 1rem;
+                cursor: pointer;
             }
         }
 
@@ -44,9 +47,7 @@
                         background-color: v.$verde;
                         list-style: none;
                         border-radius: 3px;
-                        border: 1px solid v.$negro;
-                       
-                       
+                        border: 1px solid v.$negro;       
                         a{
                             display: flex;
                             align-items: center;
@@ -58,6 +59,10 @@
 
                             p{
                                 font-size: 15px;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
                             }
                         }
                     }
@@ -82,7 +87,8 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 align-items: center;
-                margin: 10px;
+                margin: 10px 0 10px 10px;
+                cursor: pointer;
 
                 p{
                     text-align: center;
@@ -91,6 +97,7 @@
 
                 i{
                     text-align: center;
+                    margin: 10px 0 10px 10px;
                 }
             }
 
@@ -141,7 +148,75 @@
                 }
             }
         }
-
     }
 }
 
+//Contenido principal
+main{
+    display: flex;
+    height: 820px;
+    align-items: center;
+    justify-content: center;
+
+    .content_bienvenida{
+        text-align: center;
+
+        h2{
+            font-size: v.$titulo;
+        }
+
+        .content_instancias{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+            a{
+                button{
+                    display: flex;
+                    margin-top: 1rem;
+                    background-color: v.$verde;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 40px;
+                    align-items: center;
+                    transition: .25s;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                    i{
+                        margin: 5px;
+                    }
+        
+                    p{
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Pie de página
+footer{
+    background-color: v.$gris;
+
+    .content_footer{
+        text-align: center;
+        padding: 1rem;
+
+        p{
+            a{
+                color: v.$negro;
+                text-decoration: underline;
+
+                &:hover{
+                    color: v.$verde;
+                }
+            }
+        }
+    }
+
+}

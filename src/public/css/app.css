@@ -569,6 +569,7 @@ header {
 
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 body {
@@ -1031,12 +1032,17 @@ template {
   font-size: 15px;
 }
 
+.header_bienvenida {
+  height: 48px;
+  align-items: center;
+}
 .header_bienvenida .content_all-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.header_bienvenida .content_all-buttons .content_button-hamburguesa .icon {
+.header_bienvenida .content_all-buttons .content_button-hamburguesa .abrir {
   margin: 1rem;
+  cursor: pointer;
 }
 .header_bienvenida .content_all-buttons .content_user {
   align-items: center;
@@ -1079,6 +1085,9 @@ template {
 .header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p {
   font-size: 15px;
 }
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p:hover {
+  text-decoration: underline;
+}
 .header_bienvenida .content_menu-desplegable {
   position: absolute;
   top: 0%;
@@ -1093,7 +1102,8 @@ template {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 10px;
+  margin: 10px 0 10px 10px;
+  cursor: pointer;
 }
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .content_button-cerrar p {
   text-align: center;
@@ -1101,6 +1111,7 @@ template {
 }
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .content_button-cerrar i {
   text-align: center;
+  margin: 10px 0 10px 10px;
 }
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable {
   display: block;
@@ -1135,4 +1146,58 @@ template {
 .header_bienvenida .content_menu-desplegable .all_content-menu-desplegable .menu_desplegable ul li a p {
   font-size: 15px;
   margin-left: 10px;
+}
+
+main {
+  display: flex;
+  height: 820px;
+  align-items: center;
+  justify-content: center;
+}
+main .content_bienvenida {
+  text-align: center;
+}
+main .content_bienvenida h2 {
+  font-size: 3rem;
+}
+main .content_bienvenida .content_instancias {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+main .content_bienvenida .content_instancias a button {
+  display: flex;
+  margin-top: 1rem;
+  background-color: #52BE80;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  align-items: center;
+  transition: 0.25s;
+}
+main .content_bienvenida .content_instancias a button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+main .content_bienvenida .content_instancias a button i {
+  margin: 5px;
+}
+main .content_bienvenida .content_instancias a button p {
+  margin: 5px;
+}
+
+footer {
+  background-color: #EAEDED;
+}
+footer .content_footer {
+  text-align: center;
+  padding: 1rem;
+}
+footer .content_footer p a {
+  color: black;
+  text-decoration: underline;
+}
+footer .content_footer p a:hover {
+  color: #52BE80;
 }
