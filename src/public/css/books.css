@@ -897,55 +897,90 @@ template {
   display: none;
 }
 
-.formulario_iniciar-sesion {
+.formulario {
   background-color: #EAEDED;
   text-align: center;
-  width: 348px;
+  width: 448px;
   margin: 0% auto;
   border-radius: 5px;
   margin-bottom: 1rem;
+  box-shadow: 0 0 10px 1px #52BE80;
 }
-.formulario_iniciar-sesion .content_all-formulario {
+.formulario .content_all-formulario {
   padding: 1.5rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_header-formulario .content_bienvenida p {
+.formulario .content_all-formulario .content_header-formulario .content_bienvenida p {
   opacity: 70%;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario {
+.formulario .content_all-formulario .content_main-formulario {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo {
+.formulario .content_all-formulario .content_main-formulario .campo {
   background-color: white;
-  width: 300px;
+  width: 100%;
   border-radius: 50px;
   margin: 0% auto;
   margin-bottom: 1.5rem;
   align-items: center;
   display: flex;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo i {
+.formulario .content_all-formulario .content_main-formulario .campo i {
   margin: 0 20px;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo input {
+.formulario .content_all-formulario .content_main-formulario .campo input {
   border: none;
   height: 45px;
   width: 100%;
   border-radius: 50px;
   outline: none;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a:hover {
+.formulario .content_all-formulario .content_main-formulario .campo_select {
+  height: 45px;
+  background-color: white;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formulario .content_all-formulario .content_main-formulario .campo_select i {
+  margin: 0 20px;
+}
+.formulario .content_all-formulario .content_main-formulario .campo_select select {
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+.formulario .content_all-formulario .content_main-formulario .campo_checklist {
+  display: flex;
+}
+.formulario .content_all-formulario .content_main-formulario .campo_checklist input {
+  width: 40px;
+}
+.formulario .content_all-formulario .content_main-formulario .campo_checklist p {
+  font-size: 12px;
+}
+.formulario .content_all-formulario .content_main-formulario .campo_checklist p a:hover {
+  text-decoration: underline;
+  color: #52BE80;
+}
+.formulario .content_all-formulario .content_main-formulario .content_olvido-contraseña a:hover {
   cursor: pointer;
   color: #52BE80;
   text-decoration: underline;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a p {
+.formulario .content_all-formulario .content_main-formulario .content_olvido-contraseña a p {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-iniciar-sesion {
-  width: 300px;
+.formulario .content_all-formulario .content_main-formulario .content_olvido-contraseña a p a:hover {
+  text-decoration: underline;
+  color: #52BE80;
+}
+.formulario .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion {
+  width: 100%;
   margin: 1rem auto;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-iniciar-sesion a button {
+.formulario .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion button {
   width: 100%;
   border: none;
   border-radius: 50px;
@@ -954,17 +989,17 @@ template {
   transition: 0.25s;
   background-color: #52BE80;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-iniciar-sesion a button:hover {
+.formulario .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario {
+.formulario .content_all-formulario .content_footer-formulario {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_parrafo-no-tienes-cuenta p {
+.formulario .content_all-formulario .content_footer-formulario .content_parrafo-no-tienes-cuenta p {
   opacity: 40%;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_button-crear-cuenta a button {
+.formulario .content_all-formulario .content_footer-formulario .content_button-crear-cuenta-iniciar-sesion a button {
   width: 100%;
   border: none;
   border-radius: 50px;
@@ -976,19 +1011,13 @@ template {
   color: black;
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_button-crear-cuenta a button:hover {
+.formulario .content_all-formulario .content_footer-formulario .content_button-crear-cuenta-iniciar-sesion a button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_terminos-condiciones {
+.formulario .content_all-formulario .content_footer-formulario .content_terminos-condiciones {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_terminos-condiciones p {
+.formulario .content_all-formulario .content_footer-formulario .content_terminos-condiciones p {
   font-size: 15px;
-}
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_terminos-condiciones p a {
-  color: #52BE80;
-}
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_terminos-condiciones p a:hover {
-  text-decoration: underline;
 }

@@ -12,6 +12,10 @@ router.get('/QuienesSomos', (req, res) => {
     res.render('links/Quienes');
 });
 
+router.get('/bienvenida', (req, res) => {
+    res.render('links/bienvenida');
+});
+
 
 
 router.post('/add', async (req, res) => {

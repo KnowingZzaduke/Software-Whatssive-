@@ -1,0 +1,58 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header_bienvenida{
+    .content_all-buttons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .content_button-hamburguesa{
+            .icon{
+                margin: 1rem;
+            }
+        }
+
+        .content_user{
+            align-items: center;
+            display: flex;
+            justify-content: center;   
+            
+            i{
+                margin-left: 1rem;
+            }
+
+            .content_opciones-user{
+                display: block;
+
+                ul{
+                    position: absolute;
+                    list-style: none;
+                    margin-top: 5px;
+
+
+                    li{
+                        padding: 10px 30px;
+                        background-color: v.$verde;
+                        list-style: none;
+                        border-radius: 3px;
+                        border: 1px solid v.$gris;
+                       
+                        a{
+                            display: flex;
+                            align-items: center;
+
+                            i{
+                                margin-right: 1rem;
+                            }
+
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+            }     
+        }
+    }
+}

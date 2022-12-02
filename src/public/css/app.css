@@ -897,7 +897,7 @@ template {
   display: none;
 }
 
-.formulario_iniciar-sesion {
+.formulario {
   background-color: #EAEDED;
   text-align: center;
   width: 448px;
@@ -906,16 +906,16 @@ template {
   margin-bottom: 1rem;
   box-shadow: 0 0 10px 1px #52BE80;
 }
-.formulario_iniciar-sesion .content_all-formulario {
+.formulario .content_all-formulario {
   padding: 1.5rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_header-formulario .content_bienvenida p {
+.formulario .content_all-formulario .content_header-formulario .content_bienvenida p {
   opacity: 70%;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario {
+.formulario .content_all-formulario .content_main-formulario {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo {
+.formulario .content_all-formulario .content_main-formulario .campo {
   background-color: white;
   width: 100%;
   border-radius: 50px;
@@ -924,17 +924,17 @@ template {
   align-items: center;
   display: flex;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo i {
+.formulario .content_all-formulario .content_main-formulario .campo i {
   margin: 0 20px;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo input {
+.formulario .content_all-formulario .content_main-formulario .campo input {
   border: none;
   height: 45px;
   width: 100%;
   border-radius: 50px;
   outline: none;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_select {
+.formulario .content_all-formulario .content_main-formulario .campo_select {
   height: 45px;
   background-color: white;
   border-radius: 50px;
@@ -942,45 +942,45 @@ template {
   display: flex;
   align-items: center;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_select i {
+.formulario .content_all-formulario .content_main-formulario .campo_select i {
   margin: 0 20px;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_select select {
+.formulario .content_all-formulario .content_main-formulario .campo_select select {
   width: 80%;
   border: none;
   outline: none;
   border-radius: 50px;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_checklist {
+.formulario .content_all-formulario .content_main-formulario .campo_checklist {
   display: flex;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_checklist input {
+.formulario .content_all-formulario .content_main-formulario .campo_checklist input {
   width: 40px;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_checklist p {
+.formulario .content_all-formulario .content_main-formulario .campo_checklist p {
   font-size: 12px;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .campo_checklist p a:hover {
+.formulario .content_all-formulario .content_main-formulario .campo_checklist p a:hover {
   text-decoration: underline;
   color: #52BE80;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a:hover {
+.formulario .content_all-formulario .content_main-formulario .content_olvido-contraseña a:hover {
   cursor: pointer;
   color: #52BE80;
   text-decoration: underline;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a p {
+.formulario .content_all-formulario .content_main-formulario .content_olvido-contraseña a p {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_olvido-contraseña a p a:hover {
+.formulario .content_all-formulario .content_main-formulario .content_olvido-contraseña a p a:hover {
   text-decoration: underline;
   color: #52BE80;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion {
+.formulario .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion {
   width: 100%;
   margin: 1rem auto;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion button {
+.formulario .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion button {
   width: 100%;
   border: none;
   border-radius: 50px;
@@ -989,17 +989,17 @@ template {
   transition: 0.25s;
   background-color: #52BE80;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion button:hover {
+.formulario .content_all-formulario .content_main-formulario .content_button-crear-cuenta-iniciar-sesion button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario {
+.formulario .content_all-formulario .content_footer-formulario {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_parrafo-no-tienes-cuenta p {
+.formulario .content_all-formulario .content_footer-formulario .content_parrafo-no-tienes-cuenta p {
   opacity: 40%;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_button-crear-cuenta-iniciar-sesion a button {
+.formulario .content_all-formulario .content_footer-formulario .content_button-crear-cuenta-iniciar-sesion a button {
   width: 100%;
   border: none;
   border-radius: 50px;
@@ -1011,13 +1011,54 @@ template {
   color: black;
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_button-crear-cuenta-iniciar-sesion a button:hover {
+.formulario .content_all-formulario .content_footer-formulario .content_button-crear-cuenta-iniciar-sesion a button:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_terminos-condiciones {
+.formulario .content_all-formulario .content_footer-formulario .content_terminos-condiciones {
   margin-top: 1rem;
 }
-.formulario_iniciar-sesion .content_all-formulario .content_footer-formulario .content_terminos-condiciones p {
+.formulario .content_all-formulario .content_footer-formulario .content_terminos-condiciones p {
+  font-size: 15px;
+}
+
+.header_bienvenida .content_all-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header_bienvenida .content_all-buttons .content_button-hamburguesa .icon {
+  margin: 1rem;
+}
+.header_bienvenida .content_all-buttons .content_user {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.header_bienvenida .content_all-buttons .content_user i {
+  margin-left: 1rem;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user {
+  display: block;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul {
+  position: absolute;
+  list-style: none;
+  margin-top: 5px;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li {
+  padding: 10px 30px;
+  background-color: #52BE80;
+  list-style: none;
+  border-radius: 3px;
+  border: 1px solid #EAEDED;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a {
+  display: flex;
+  align-items: center;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a i {
+  margin-right: 1rem;
+}
+.header_bienvenida .content_all-buttons .content_user .content_opciones-user ul li a p {
   font-size: 15px;
 }
