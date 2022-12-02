@@ -21,13 +21,22 @@
                 margin-left: 1rem;
             }
 
+            .content_info-user{
+                display: flex;
+                
+                p{
+                    font-size: 15px;
+                    margin-left: 1rem;
+                }
+            }
+
             .content_opciones-user{
                 display: block;
 
                 ul{
                     position: absolute;
                     list-style: none;
-                    margin-top: 5px;
+                    margin-top: 15px;
 
 
                     li{
@@ -35,11 +44,13 @@
                         background-color: v.$verde;
                         list-style: none;
                         border-radius: 3px;
-                        border: 1px solid v.$gris;
+                        border: 1px solid v.$negro;
+                       
                        
                         a{
                             display: flex;
                             align-items: center;
+                            color: v.$negro;
 
                             i{
                                 margin-right: 1rem;
@@ -55,4 +66,82 @@
             }     
         }
     }
+
+    .content_menu-desplegable{
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        z-index: 99;
+        background-color: v.$grisOscuro;
+        width: 270px;
+        
+        .all_content-menu-desplegable{
+            .content_button-cerrar{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                margin: 10px;
+
+                p{
+                    text-align: center;
+                    color: v.$verde;
+                }
+
+                i{
+                    text-align: center;
+                }
+            }
+
+            .menu_desplegable{
+                display: block;
+                margin-top: 1rem;
+                
+                
+                ul{
+                    :first-child{
+                        a{
+                            background-color: v.$verde;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 5px;
+                            width: 100%;
+                        }
+                        
+                    }
+
+                    li{
+                        margin-top: 1.7rem;
+                        width: 95%;
+                        transition: .25s;
+                        
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(1.1);
+                            background-color: v.$verde;
+                            padding: 10px 40px;
+                            border: none;
+                            border-radius: 5px;
+                        }
+
+                        a{
+                            display: flex;
+
+                            i{
+                                margin-left: 15px;
+                            }
+
+                            p{
+                                font-size: 15px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
+
