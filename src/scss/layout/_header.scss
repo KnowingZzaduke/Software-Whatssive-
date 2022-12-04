@@ -112,7 +112,7 @@ header{
         .content_navbar-small{
             display: block;
 
-            .hamburguesa{
+            .abrir_header{
                 width: 50px;
                 height: 50px;
                 position: absolute;
@@ -125,7 +125,7 @@ header{
                 }
             }
 
-            .content_menu-desplegable{
+            .content_menu-desplegable-header{
                 background-color: v.$negro;
                 top: 0%;
                 left: 0%;
@@ -147,7 +147,7 @@ header{
                         position: relative;
                         top: 10px;
                     }
-                    .cerrar{
+                    .cerrar_header{
                         width: 20px;
                         height: 20px;
                         filter: invert(100%);
@@ -202,7 +202,7 @@ header{
         .content_navbar-small{
             display: block;
 
-            .hamburguesa{
+            .abrir_header{
                 width: 50px;
                 height: 50px;
                 position: absolute;
@@ -215,7 +215,7 @@ header{
                 }
             }
 
-            .content_menu-desplegable{
+            .content_menu-desplegable-header{
                 background-color: v.$negro;
                 top: 0%;
                 left: 0%;
@@ -236,7 +236,7 @@ header{
                         position: relative;
                         top: 10px;
                     }
-                    .cerrar{
+                    .cerrar_header{
                         width: 20px;
                         height: 20px;
                         filter: invert(100%);
