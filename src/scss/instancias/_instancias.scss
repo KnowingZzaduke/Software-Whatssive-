@@ -1,0 +1,82 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+main{
+    padding: 0 35px;
+    width: auto;
+    display: block;
+
+    .content_encabezado-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-top: 2rem;
+
+        .content_inicio-instancia{
+            a{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+
+    
+                i{
+                    filter: invert(100%);
+                }
+    
+                p{
+                    color:v.$negro;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        .content_button-agregar-instancia{
+            justify-content: center;
+            display: flex;
+
+
+            button{
+                display: flex;
+                align-items: center;
+                background-color: v.$verde;
+                color: v.$blanco;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+
+                &:hover{
+                    cursor: pointer;           
+                }
+
+                p{
+                    margin-left: 1rem;
+                }    
+            }
+        }
+    }
+
+    .content_tabla-instancia{
+        margin-top: 2rem;
+
+        table{
+            width: 100%;
+            border: 2px solid v.$negro;
+            
+            tr{
+                height: 40px;
+
+                th{
+                    border-bottom: 2px solid v.$negro;
+                    
+                }
+
+                td{
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+}

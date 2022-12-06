@@ -51,7 +51,7 @@ header {
   font-size: 3rem;
 }
 .content_all-firt-section .content_absolute .title_content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .content_all-firt-section .content_absolute .title_content .button_content {
   margin-top: 2rem;
@@ -302,7 +302,7 @@ header {
   padding-top: 2rem;
 }
 .second_section .intro_content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .second_section .info_content {
   display: flex;
@@ -363,7 +363,7 @@ header {
   text-align: center;
 }
 .third_section .title_content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 .third_section .api_content {
@@ -582,7 +582,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -1202,4 +1202,64 @@ footer .content_footer p a {
 }
 footer .content_footer p a:hover {
   color: #52BE80;
+}
+
+main {
+  padding: 0 35px;
+  width: auto;
+  display: block;
+}
+main .content_encabezado-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 2rem;
+}
+main .content_encabezado-main .content_inicio-instancia a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+main .content_encabezado-main .content_inicio-instancia a i {
+  filter: invert(100%);
+}
+main .content_encabezado-main .content_inicio-instancia a p {
+  color: black;
+  margin-left: 1rem;
+}
+main .content_encabezado-main .content_button-agregar-instancia {
+  justify-content: center;
+  display: flex;
+}
+main .content_encabezado-main .content_button-agregar-instancia button {
+  display: flex;
+  align-items: center;
+  background-color: #52BE80;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+main .content_encabezado-main .content_button-agregar-instancia button:hover {
+  cursor: pointer;
+}
+main .content_encabezado-main .content_button-agregar-instancia button p {
+  margin-left: 1rem;
+}
+main .content_tabla-instancia {
+  margin-top: 2rem;
+}
+main .content_tabla-instancia table {
+  width: 100%;
+  border: 2px solid black;
+}
+main .content_tabla-instancia table tr {
+  height: 40px;
+}
+main .content_tabla-instancia table tr th {
+  border-bottom: 2px solid black;
+}
+main .content_tabla-instancia table tr td {
+  text-align: center;
 }
