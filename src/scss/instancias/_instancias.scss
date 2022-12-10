@@ -2,10 +2,11 @@
 @use '../base/mixins' as m;
 
 
-main{
+.main_header{
     padding: 0 35px;
     width: auto;
     display: block;
+    
 
     .content_encabezado-main{
         display: grid;
@@ -76,6 +77,158 @@ main{
                     text-align: center;
                     
                 }
+            }
+        }
+    }
+}
+
+//Versión responsive
+.main_header{
+    @include m.phone{
+        width: 600px;
+        .content_tabla-instancia{
+            overflow-x: scroll;
+        }
+    }
+}
+
+//Modal de confirmación de instancia
+.content_modal-confirmar-instancia-mostrar{
+    position: fixed;
+    width: 500px;
+    margin: 0% auto;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    transition: .25s;
+    border: 2px solid v.$negro;
+
+    .header_confirmar-instancia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+        background-color: v.$verde;
+        padding: 10px 0;
+
+        i{
+            &:hover{
+                filter: invert(100%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .main_confirmar-instancia{
+        background-color: v.$blanco;
+        padding: 10px 0;
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .footer_confirmar-instancia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        background-color: v.$gris;
+
+        button{
+            display: flex;
+            width: 150px;
+            margin: 5px auto;
+            padding: 10px;
+            align-items: center;
+            border: none;
+            background-color: v.$verde;
+            border-radius: 3px;
+            margin: 15px auto 15px auto;
+            transition: .25s;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+            i{
+                filter: invert(100%);
+            }
+
+            p{
+                color: v.$blanco;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+.content_modal-confirmar-instancia-ocultar{
+    position: fixed;
+    width: 500px;
+    margin: 0% auto;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    top: -100vh;
+    transition: .25s;
+    border: 2px solid v.$negro;
+
+    .header_confirmar-instancia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+        background-color: v.$verde;
+        padding: 10px 0;
+
+        i{
+            &:hover{
+                filter: invert(100%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .main_confirmar-instancia{
+        background-color: v.$blanco;
+        padding: 10px 0;
+
+        p{
+            text-align: center;
+        }
+    }
+
+    .footer_confirmar-instancia{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        background-color: v.$gris;
+
+        button{
+            display: flex;
+            width: 150px;
+            margin: 5px auto;
+            padding: 10px;
+            align-items: center;
+            border: none;
+            background-color: v.$verde;
+            border-radius: 3px;
+            margin: 15px auto 15px auto;
+            transition: .25s;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+            i{
+                filter: invert(100%);
+            }
+
+            p{
+                color: v.$blanco;
+                margin-left: 1rem;
             }
         }
     }

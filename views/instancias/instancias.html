@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Encabezado pendiente -->
-    <main>
+    <main class="main_header">
         <div class="content_encabezado-main">
             <div class="content_inicio-instancia">
                 <a href="#">
@@ -22,6 +22,29 @@
                 <button>
                     <i class="fa-solid fa-circle-plus"></i>
                     <p>Agregar instancia</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="content_modal-confirmar-instancia-ocultar">
+            <div class="header_confirmar-instancia">
+                <p>Mensaje</p>
+                <i class="fa-sharp fa-solid fa-x cerrar"></i>            
+            </div>
+
+            <div class="main_confirmar-instancia">
+                <p>Estás seguro que deseas crear una nueva instancia?</p>
+            </div>
+
+            <div class="footer_confirmar-instancia">
+                <button class="boton_cerrar" type="button">
+                    <i class="fa-regular fa-xmark"></i>
+                    <p>Cerrar</p>
+                </button>
+
+                <button>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Confirmar</p>
                 </button>
             </div>
         </div>
@@ -42,7 +65,7 @@
                     </th>
 
                     <th>
-                        
+
                     </th>
                 </tr>
 
@@ -68,5 +91,6 @@
     </main>
     <!-- Footer pendiente -->
     <script src="https://kit.fontawesome.com/1fb0613f73.js" crossorigin="anonymous"></script>
+    <script src="/src/public/js/modal_instancia.js"></script>
 </body>
 </html>

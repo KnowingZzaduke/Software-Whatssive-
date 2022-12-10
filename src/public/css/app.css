@@ -1089,7 +1089,7 @@ template {
   text-decoration: underline;
 }
 .header_bienvenida .content_menu-desplegable {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0%;
   right: 0;
@@ -1204,35 +1204,35 @@ footer .content_footer p a:hover {
   color: #52BE80;
 }
 
-main {
+.main_header {
   padding: 0 35px;
   width: auto;
   display: block;
 }
-main .content_encabezado-main {
+.main_header .content_encabezado-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   margin-top: 2rem;
 }
-main .content_encabezado-main .content_inicio-instancia a {
+.main_header .content_encabezado-main .content_inicio-instancia a {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-main .content_encabezado-main .content_inicio-instancia a i {
+.main_header .content_encabezado-main .content_inicio-instancia a i {
   filter: invert(100%);
 }
-main .content_encabezado-main .content_inicio-instancia a p {
+.main_header .content_encabezado-main .content_inicio-instancia a p {
   color: black;
   margin-left: 1rem;
 }
-main .content_encabezado-main .content_button-agregar-instancia {
+.main_header .content_encabezado-main .content_button-agregar-instancia {
   justify-content: center;
   display: flex;
 }
-main .content_encabezado-main .content_button-agregar-instancia button {
+.main_header .content_encabezado-main .content_button-agregar-instancia button {
   display: flex;
   align-items: center;
   background-color: #52BE80;
@@ -1241,25 +1241,153 @@ main .content_encabezado-main .content_button-agregar-instancia button {
   border-radius: 5px;
   padding: 10px;
 }
-main .content_encabezado-main .content_button-agregar-instancia button:hover {
+.main_header .content_encabezado-main .content_button-agregar-instancia button:hover {
   cursor: pointer;
 }
-main .content_encabezado-main .content_button-agregar-instancia button p {
+.main_header .content_encabezado-main .content_button-agregar-instancia button p {
   margin-left: 1rem;
 }
-main .content_tabla-instancia {
+.main_header .content_tabla-instancia {
   margin-top: 2rem;
 }
-main .content_tabla-instancia table {
+.main_header .content_tabla-instancia table {
   width: 100%;
   border: 2px solid black;
 }
-main .content_tabla-instancia table tr {
+.main_header .content_tabla-instancia table tr {
   height: 40px;
 }
-main .content_tabla-instancia table tr th {
+.main_header .content_tabla-instancia table tr th {
   border-bottom: 2px solid black;
 }
-main .content_tabla-instancia table tr td {
+.main_header .content_tabla-instancia table tr td {
   text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .main_header {
+    width: 600px;
+  }
+  .main_header .content_tabla-instancia {
+    overflow-x: scroll;
+  }
+}
+
+.content_modal-confirmar-instancia-mostrar {
+  position: fixed;
+  width: 500px;
+  margin: 0% auto;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.content_modal-confirmar-instancia-mostrar .header_confirmar-instancia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  background-color: #52BE80;
+  padding: 10px 0;
+}
+.content_modal-confirmar-instancia-mostrar .header_confirmar-instancia i:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+.content_modal-confirmar-instancia-mostrar .main_confirmar-instancia {
+  background-color: white;
+  padding: 10px 0;
+}
+.content_modal-confirmar-instancia-mostrar .main_confirmar-instancia p {
+  text-align: center;
+}
+.content_modal-confirmar-instancia-mostrar .footer_confirmar-instancia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  background-color: #EAEDED;
+}
+.content_modal-confirmar-instancia-mostrar .footer_confirmar-instancia button {
+  display: flex;
+  width: 150px;
+  margin: 5px auto;
+  padding: 10px;
+  align-items: center;
+  border: none;
+  background-color: #52BE80;
+  border-radius: 3px;
+  margin: 15px auto 15px auto;
+  transition: 0.25s;
+}
+.content_modal-confirmar-instancia-mostrar .footer_confirmar-instancia button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.content_modal-confirmar-instancia-mostrar .footer_confirmar-instancia button i {
+  filter: invert(100%);
+}
+.content_modal-confirmar-instancia-mostrar .footer_confirmar-instancia button p {
+  color: white;
+  margin-left: 1rem;
+}
+
+.content_modal-confirmar-instancia-ocultar {
+  position: fixed;
+  width: 500px;
+  margin: 0% auto;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  top: -100vh;
+  transition: 0.25s;
+  border: 2px solid black;
+}
+.content_modal-confirmar-instancia-ocultar .header_confirmar-instancia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+  background-color: #52BE80;
+  padding: 10px 0;
+}
+.content_modal-confirmar-instancia-ocultar .header_confirmar-instancia i:hover {
+  filter: invert(100%);
+  cursor: pointer;
+}
+.content_modal-confirmar-instancia-ocultar .main_confirmar-instancia {
+  background-color: white;
+  padding: 10px 0;
+}
+.content_modal-confirmar-instancia-ocultar .main_confirmar-instancia p {
+  text-align: center;
+}
+.content_modal-confirmar-instancia-ocultar .footer_confirmar-instancia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  background-color: #EAEDED;
+}
+.content_modal-confirmar-instancia-ocultar .footer_confirmar-instancia button {
+  display: flex;
+  width: 150px;
+  margin: 5px auto;
+  padding: 10px;
+  align-items: center;
+  border: none;
+  background-color: #52BE80;
+  border-radius: 3px;
+  margin: 15px auto 15px auto;
+  transition: 0.25s;
+}
+.content_modal-confirmar-instancia-ocultar .footer_confirmar-instancia button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.content_modal-confirmar-instancia-ocultar .footer_confirmar-instancia button i {
+  filter: invert(100%);
+}
+.content_modal-confirmar-instancia-ocultar .footer_confirmar-instancia button p {
+  color: white;
+  margin-left: 1rem;
 }
